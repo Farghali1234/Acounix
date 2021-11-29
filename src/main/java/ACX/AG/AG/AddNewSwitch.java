@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import Pages.ProjectWorkflowMainPage;
 import Pages.networkSwitchConfigurations;
+import utilities.ReadData;
 
 public class AddNewSwitch {
 	
@@ -20,13 +21,13 @@ public class AddNewSwitch {
 	//Click on Add Button
 	NSC.clickADDButtonSC();
 	//Write name
-	NSC.enterName("nona Switch");
+	NSC.enterName(ReadData.SwitchName);
 	//Write User Name
-	NSC.enterUName("Switch nono nona");
+	NSC.enterUName(ReadData.SwitchUserName);
 	//Write Pass
-	NSC.enterPass("password");
+	NSC.enterPass(ReadData.SwitchPass);
 	//Write URl
-	NSC.enterurl("http://192.168.1.173");
+	NSC.enterurl(ReadData.SwitchUrl);
 	//Select Type of server
 	NSC.SelectType(1);
 	//Select Type of Server Version

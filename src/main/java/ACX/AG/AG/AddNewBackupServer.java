@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import Pages.backupSwitchConfigurations;
 import Pages.networkSwitchConfigurations;
+import utilities.ReadData;
 
 public class AddNewBackupServer {
 
@@ -20,22 +21,22 @@ public class AddNewBackupServer {
 		//Click on Add Button
 		BSC.clickADDButtonServerC();
 		//Write name
-		BSC.enterName("nona BK Server");
+		BSC.enterName(ReadData.BKSName);
 		//Write User Name
-		BSC.enterUName("nono nona Server");
+		BSC.enterUName(ReadData.BKSUserName);
 		//Write User Name
-		BSC.enterDomainName("dddddddddddddddddd");
+		BSC.enterDomainName(ReadData.BKDomainName);
 		//Write User Name
-		BSC.enterDomainType("dttdtdtdtdttdt");
+		BSC.enterDomainType(ReadData.BKDomainType);
 		//Write User Name
-		BSC.enterSSHUName("SSH name1");
+		BSC.enterSSHUName(ReadData.BKSSHUName);
 		//Write User Name
-		BSC.enterSSHPass("SSH Password1");
+		BSC.enterSSHPass(ReadData.BKSSHPass);
 		
 		//Write Pass
-		BSC.enterPass("password");
+		BSC.enterPass(ReadData.BKSPass);
 		//Write URl
-		BSC.enterurl("http://192.168.1.173");
+		BSC.enterurl(ReadData.BKSUrl);
 		//Select Type of server
 		BSC.SelectServerVendor(1);
 		//Select Select SiteName

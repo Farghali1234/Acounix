@@ -1,5 +1,6 @@
 package ACX.AG.AG;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -7,16 +8,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ReadData;
 
 public class BasicsSetup {
 	
-	public BasicsSetup() {
+	public BasicsSetup() throws IOException {
+		ReadData readData=new ReadData();
+		readData.Read();
 	}
 	
 	public WebDriver SetUp()
 	{
 		//Setup
-		//WebDriverManager.chromedriver().setup(); //.version("77.0.3865.40").setup();
 		WebDriverManager.firefoxdriver().setup(); 
 		FirefoxOptions options = new FirefoxOptions (); 
 		WebDriver driver =new FirefoxDriver(options);

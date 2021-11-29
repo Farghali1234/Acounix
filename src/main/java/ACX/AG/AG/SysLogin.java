@@ -18,7 +18,6 @@ public class SysLogin {
 			//CLick on Login Button
 			login.clickLogin();
 			
-			
 	}
 
 }
